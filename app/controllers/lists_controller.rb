@@ -6,6 +6,8 @@ before_action :find_list, only: [:show]
   end
 
   def show
+    @list = List.find(params[:id])
+    @bookmarks = @list.bookmarks
   end
 
   def create
