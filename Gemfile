@@ -12,6 +12,8 @@ gem 'puma', '~> 5.0'
 gem "autoprefixer-rails", "10.2.5"
 gem "font-awesome-sass", "~> 5.15"
 gem "simple_form"
+# cloudry key gem
+gem 'dotenv-rails', groups: [:development, :test]
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
