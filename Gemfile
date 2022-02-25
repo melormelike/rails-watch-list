@@ -14,6 +14,8 @@ gem "font-awesome-sass", "~> 5.15"
 gem "simple_form"
 # cloudry key gem
 gem 'dotenv-rails', groups: [:development, :test]
+#
+gem 'cloudinary', '~> 1.16.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker

@@ -2,24 +2,8 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
-
-.banner {
-  background-image: asset-url("movie_2.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  }
-  .card-product {
-    overflow: hidden;
-    height: 120px;
-    background: white;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-  }
-
-  .card-product img {
-    height: 100%;
-    width: 120px;
-    object-fit: cover;
-  }
+@import "card";
+@import "banner";
+a {
+  color: aliceblue;
+}

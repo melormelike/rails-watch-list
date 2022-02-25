@@ -1,12 +1,21 @@
-   <h1><strong>Movie Details</strong></h1>
+   <h1>Category: <%= @list.name %></h1>
 
-  <div class="jumbotron jumbotron-fluid mt-5">
-  <div class="container col-6">
-    Category:<p class="p-2 bg-light"><%= @list.name %></p>
-    <% @list.bookmarks.each do |bookmark| %>
-    Movie Title:<p class="p-2 bg-light"><%= bookmark.movie.title %></p>
-    Comment:<p class="p-2 bg-light"><%= bookmark.comment%></p>
-    <% end %>
+    <div class="container">
+      <div class="row">
+        <% @bookmarks.each do |bookmark| %>
+          <div class="col-lg-4">
+            <div class="card" style="width: 18rem;">
+
+              <%= image_tag 'movie_3.jpg', crop: :fill %>
+
+              <h5 class="card-title">Movie Title:<%= bookmark.movie.title %></h5>
+              <p class="card-text"><%= bookmark.comment %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+
     <br>
     <div class="btn btn-secondary">
       <%= link_to "Create a Bookmark", new_list_bookmark_path(@list) , class: "text-white text-decoration-none"%>
@@ -14,5 +23,3 @@
     <div class="btn btn-secondary">
       <%= link_to "Back to Lists", lists_path, class: "text-white text-decoration-none"%>
     </div>
-  </div>
-</div>
